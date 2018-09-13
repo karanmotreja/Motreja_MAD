@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab1Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gpr-3m-wFH">
+                                <rect key="frame" x="50" y="178" width="314" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1L-n1-EBo">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="Quarterback">
+                                            <color key="titleColor" red="1" green="0.081321229719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKg-J4-phA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLg-zR-YY8">
+                                        <rect key="frame" x="176" y="0.0" width="138" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="Linebacker">
+                                            <color key="titleColor" red="1" green="0.081321229719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiI-Bi-mpt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Francisco 49ers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwR-gU-nxF">
+                                <rect key="frame" x="50" y="104" width="314" height="34.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.58520887305699487" green="0.45618184977822673" blue="0.28234051271502991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="gWL-Y0-NJn">
+                                <rect key="frame" x="30.333333333333343" y="246" width="353.33333333333326" height="480"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gWL-Y0-NJn" secondAttribute="height" multiplier="220:299" id="AGd-kS-hOU"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="598" id="edo-nu-WXX"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="440" id="zi1-ld-Ckr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TwR-gU-nxF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="1D6-Xg-Zmp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gWL-Y0-NJn" secondAttribute="bottom" constant="10" id="8oU-HJ-Vkp"/>
+                            <constraint firstItem="gpr-3m-wFH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="IWW-C1-dSe"/>
+                            <constraint firstItem="gpr-3m-wFH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bIr-w7-aRe"/>
+                            <constraint firstItem="gpr-3m-wFH" firstAttribute="width" secondItem="TwR-gU-nxF" secondAttribute="width" id="e0l-pe-DNy"/>
+                            <constraint firstItem="TwR-gU-nxF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="iyO-87-CpT"/>
+                            <constraint firstItem="gWL-Y0-NJn" firstAttribute="top" secondItem="gpr-3m-wFH" secondAttribute="bottom" constant="21" id="l38-X9-o5b"/>
+                            <constraint firstItem="gWL-Y0-NJn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rp7-U3-7Kg"/>
+                            <constraint firstItem="TwR-gU-nxF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tKN-eP-vIm"/>
+                            <constraint firstItem="gWL-Y0-NJn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" priority="750" constant="-328" id="ugm-3v-JEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="artImage" destination="gWL-Y0-NJn" id="rxb-hj-tsR"/>
+                        <outlet property="messageText" destination="TwR-gU-nxF" id="lvX-d1-t27"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.5" y="132.421875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="main" width="440" height="598"/>
+    </resources>
+</document>
