@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="title">NFL Rivalry Finder</string>
+    <string name="rivals">Find Your Teams Rival!</string>
+    <string name="button">Find Rivalry</string>
+
+    <string-array name="teams">
+        <item>San Francisco 49ers</item>
+        <item>Dallas Cowboys</item>
+        <item>Denver Broncos</item>
+        <item>New England Patriots</item>
+        <item>Pittsburgh Steelers</item>
+    </string-array>
+
+    <string name="nfl_image">NFL Logo</string>
+    <string name="suggested_rivalry">Your teams biggest rival is </string>
+
+</resources>
