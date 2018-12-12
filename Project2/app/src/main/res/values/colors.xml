@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#21222c</color>
+    <color name="colorPrimaryDark">#21222c</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    //button colors
+    <color name="blue">#47f9fe</color>
+    <color name="orange">#feed48</color>
+    <color name="pink">#fd75a5</color>
+
+    //white
+    <color name="white">#FFFFFF</color>
+
+</resources>
