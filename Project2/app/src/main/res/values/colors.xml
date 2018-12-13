@@ -4,6 +4,11 @@
     <color name="colorPrimaryDark">#21222c</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
+
+
 
     //button colors
     <color name="blue">#47f9fe</color>

@@ -14,56 +14,59 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/style"
+        android:text="@string/name"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="30dp" />
+        android:textSize="25dp" />
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginTop="10dp">
-
-    <Button
-        android:id="@+id/button2"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:textSize="15dp"
-        android:textColor="@color/white"
-        android:text="@string/button1" />
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:text="@string/button2" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:onClick="flumeSounds"
+            android:text="@string/button1"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:textSize="15dp"
-        android:textColor="@color/white"
-        android:text="@string/button3" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="kaytraSounds"
+            android:text="@string/button3"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:onClick="ekaliSounds"
+            android:text="@string/button2"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/artistText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="5dp"
-        android:textSize="20dp"
+        android:text="@string/artist"
         android:textAlignment="center"
-        android:text="@string/artist" />
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
     <View
         android:layout_width="match_parent"
@@ -75,69 +78,80 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
-            android:background="@color/pink"
-            android:onClick="playsound1"
             android:layout_width="75dp"
-            android:layout_height="75dp" />
+            android:layout_height="75dp"
+            android:background="@color/pink"
+            android:onClick="playsound1" />
+
         <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="5dp"
             android:background="@color/pink"
-            android:onClick="playsound2"
-            android:layout_width="75dp"
-            android:layout_height="75dp" />
+            android:onClick="playsound2" />
+
         <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="5dp"
             android:background="@color/pink"
-            android:onClick="playsound3"
-            android:layout_width="75dp"
-            android:layout_height="75dp" />
+            android:onClick="playsound3" />
     </LinearLayout>
+
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:background="@color/pink"
-            android:onClick="playsound4"
-            android:layout_width="75dp"
-            android:layout_height="75dp" />
-        <Button
-            android:layout_marginLeft="5dp"
-            android:background="@color/pink"
-            android:onClick="playsound5"
-            android:layout_width="75dp"
-            android:layout_height="75dp" />
-        <Button
-            android:layout_marginLeft="5dp"
-            android:background="@color/pink"
-            android:onClick="playsound6"
-            android:layout_width="75dp"
-            android:layout_height="75dp" />
-    </LinearLayout>
-    <LinearLayout
         android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@color/pink"
+            android:onClick="playsound4" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/pink"
+            android:onClick="playsound5" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/pink"
+            android:onClick="playsound6" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
+
         <Button
-            android:background="@color/pink"
-            android:onClick="playsound7"
             android:layout_width="75dp"
-            android:layout_height="75dp" />
+            android:layout_height="75dp"
+            android:background="@color/pink"
+            android:onClick="playsound7" />
+
         <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="5dp"
             android:background="@color/pink"
-            android:onClick="playsound8"
-            android:layout_width="75dp"
-            android:layout_height="75dp" />
+            android:onClick="playsound8" />
+
         <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_marginLeft="5dp"
             android:background="@color/pink"
-            android:onClick="playsound9"
-            android:layout_width="75dp"
-            android:layout_height="75dp" />
+            android:onClick="playsound9" />
     </LinearLayout>
 
 

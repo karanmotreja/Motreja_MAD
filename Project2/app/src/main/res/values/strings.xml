@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">Project 2</string>
 
-    <string name="style">Select Style</string>
-    <string name="artist">Troyboi</string>
+    <string name="name">Drum Pad</string>
+    <string name="artist"></string>
 
-    <string name="button1">Kanye West</string>
-    <string name="button2">Troyboi</string>
+
+    <string name="button1">Flume</string>
+    <string name="button2">Ekali</string>
     <string name="button3">Kaytranada</string>
 </resources>

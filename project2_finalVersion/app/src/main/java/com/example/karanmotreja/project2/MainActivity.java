@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
 //        //save current state
 //    }
 
+
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         artist = savedInstanceState.getString("artist");
@@ -71,9 +72,9 @@ public class MainActivity extends Activity {
         sound8 = sp.load(getApplicationContext(),R.raw.flume8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.flume9,1);
 
-       TextView textView = findViewById(R.id.artistText);
-       textView.setText(getString(R.string.button1));
-       artist = "flume";
+        TextView textView = findViewById(R.id.currentArtist);
+        textView.setText(getString(R.string.flume));
+        artist = "flume";
 
 
     }
@@ -91,8 +92,8 @@ public class MainActivity extends Activity {
         sound8 = sp.load(getApplicationContext(),R.raw.ekali8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.ekali9,1);
 
-        TextView textView = findViewById(R.id.artistText);
-        textView.setText(getString(R.string.button2));
+        TextView textView = findViewById(R.id.currentArtist);
+        textView.setText(getString(R.string.ekali));
         artist = "ekali";
 
     }
@@ -110,8 +111,8 @@ public class MainActivity extends Activity {
         sound8 = sp.load(getApplicationContext(),R.raw.kaytra8,1);
         sound9 = sp.load(getApplicationContext(),R.raw.kaytra9,1);
 
-        TextView textView = findViewById(R.id.artistText);
-        textView.setText(getString(R.string.button3));
+        TextView textView = findViewById(R.id.currentArtist);
+        textView.setText(getString(R.string.kaytranada));
         artist = "kaytranada";
 
     }

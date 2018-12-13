@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Drum Pad</string>
+
+    <string name="title">Drum Pad</string>
+
+    <string name="flume">Flume</string>
+    <string name="kaytranada">Kaytranada</string>
+    <string name="ekali">Ekali</string>
+
+    <string name="artist"></string>
+
+
+</resources>
