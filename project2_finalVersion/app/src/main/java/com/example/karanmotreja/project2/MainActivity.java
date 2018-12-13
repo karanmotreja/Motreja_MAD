@@ -24,36 +24,30 @@ public class MainActivity extends Activity {
     private String artist;
 
 
-//    @Override
-//    protected void onSaveInstanceState(Bundle outState)
-//    {
-//        //save current state
-//    }
-
-
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         artist = savedInstanceState.getString("artist");
-        switch(artist) {
-            case "flume":
-                flumeSounds(null);
-                break;
-            case "ekali":
-                ekaliSounds(null);
-                break;
-            case "kaytranada":
-                kaytraSounds(null);
-                break;
-
+        if(artist != null) {
+            switch (artist) {
+                case "flume":
+                    flumeSounds(null);
+                    break;
+                case "ekali":
+                    ekaliSounds(null);
+                    break;
+                case "kaytranada":
+                    kaytraSounds(null);
+                    break;
+            }
         }
-
 
 
     }
 
     // invoked when the activity may be temporarily destroyed, save the instance state here
     @Override
-    public void onSaveInstanceState(Bundle outState) {
+    public void onSaveInstanceState(Bundle outState)
+    {
         outState.putString("artist", artist);
 
         super.onSaveInstanceState(outState);
@@ -126,6 +120,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         sp = new SoundPool(5, AudioManager.STREAM_MUSIC,0);
+
 
 
     }
