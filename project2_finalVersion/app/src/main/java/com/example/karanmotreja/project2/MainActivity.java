@@ -119,7 +119,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sp = new SoundPool(5, AudioManager.STREAM_MUSIC,0);
+        sp = new SoundPool(9, AudioManager.STREAM_MUSIC,0);
 
 
 
