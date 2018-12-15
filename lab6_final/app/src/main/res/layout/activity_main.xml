@@ -4,89 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="295dp"
         android:text="@string/heading"
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
-        app:layout_constraintBottom_toTopOf="@+id/sportTextView"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="18dp" />
 
     <ToggleButton
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="162dp"
-        android:textOff="@string/toggle_f"
-        android:textOn="@string/toggle_c"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/spinner"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:textOff="@string/toggle_r"
+        android:textOn="@string/toggle_w"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="73dp" />
 
     <TextView
-        android:id="@+id/sportTextView"
-        android:layout_width="357dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="345dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="30dp"
+        android:id="@+id/pizzaTextView"
+        android:layout_width="362dp"
+        android:layout_height="50dp"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="425dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:onClick="findTeam"
-        android:text="@string/sport_button"
-        app:layout_constraintBottom_toTopOf="@+id/sportTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+        android:onClick="findPizza"
+        android:text="@string/pizza_button"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="287dp" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="114dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="237dp"
-        android:entries="@array/sports"
-        app:layout_constraintBottom_toTopOf="@+id/sportTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="50dp"
+        android:entries="@array/size"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="212dp" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="309dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton">
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="145dp">
 
         <RadioButton
             android:id="@+id/radioButton1"
@@ -106,12 +77,19 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="139dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="25dp"
+        android:layout_height="50dp"
         android:src="@drawable/nfl"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sportTextView" />
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/pizzaName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="75dp" />
 
 </android.support.constraint.ConstraintLayout>
